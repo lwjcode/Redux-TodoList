@@ -21,35 +21,3 @@ export function deleteTask (task) {
 		});
 	}
 }
-
-//处理更新状态和删除任务的reducer;
-function modifyTaskReducer (state = {taskList: []}, action) {
-
-	const index = state.taskListData.taskList.indexOf(
-		state.taskListData.taskList.find(task => task.id === action.payload.id)
-	);
-
-	switch (action.type) {
-		case UPDATE_TASK: {
-			state.taskListData.taskList[index].status = !state.taskListData.taskList[index].state;
-			return {
-				...state,
-				taskList: state.taskListData.taskList,
-			};
-		}
-
-		case DELETE_TASK: {
-			state.taskListData.taskList.splice(index, 1);
-			return {
-				...state,
-				taskList: state.taskListData.taskList,
-			};
-		}
-
-		default: {
-			return state;
-		}
-	}
-}
-
-export default modifyTaskReducer;

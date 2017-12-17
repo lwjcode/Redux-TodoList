@@ -58,7 +58,7 @@ class BasicLayout extends Component {
 			      </div>
 			    </Content>
 			    <Footer style={{ textAlign: 'center' }}>
-			      Lucy' todoList  ©2017 Created by React
+			      xiaojing todoList  ©2017 Created by React
 			    </Footer>
 			</Layout>
 		);

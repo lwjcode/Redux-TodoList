@@ -1,0 +1,13 @@
+{
+	"status": 1,
+	"result": {
+		"user": {
+			"id": "0001",
+			"name": "鲁文静",
+			"age": 22,
+			"sex": "女",
+			"icon": "userIcon.png"
+		}
+	},
+	"message": ""
+}

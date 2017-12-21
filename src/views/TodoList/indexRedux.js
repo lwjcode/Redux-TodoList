@@ -13,7 +13,7 @@ const ADD_TASK = 'ADD_TASK';
 const UPDATE_TASK = 'UPDATE_TASK';
 const DELETE_TASK = 'DELETE_TASK';
 
-function todoListReducer (state = { taskListData }, action) {
+function todoListReducer (state = taskListData, action) {
 	switch(action.type) {
 		case LOAD_TASKLIST: {
 			return {
